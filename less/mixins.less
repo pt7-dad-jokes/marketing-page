@@ -1,7 +1,19 @@
-.flex(@direction, @justify, @wrap, @align){
+.flex(){
     display: flex;
+}
+
+.direction(@direction) {
     flex-direction: @direction;
+}
+
+.justify(@justify) {
     justify-content: @justify;
-    flex-wrap: @wrap;
+}
+
+.f-align(@align) {
     align-items: @align;
+}
+
+.wrap(@wrap) {
+    flex-wrap: @wrap;
 }
