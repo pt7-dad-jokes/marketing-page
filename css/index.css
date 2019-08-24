@@ -110,7 +110,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background: white;
+  background: #FFE6CE;
   height: 100%;
 }
 html,
@@ -201,15 +201,64 @@ nav a {
   display: flex;
   flex-direction: column;
 }
-.hype-box {
+@media (max-width: 500px) {
+  .hype-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .hype-box img {
+    max-width: 80%;
+    margin: 1% auto;
+  }
+  .hype-box div {
+    margin: auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 999px) {
+  .hype-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 1% 0% 0% 0%;
+  }
+  .hype-box img {
+    width: 50%;
+  }
+  .hype-box div {
+    margin: auto;
+  }
+}
+.dev {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.dev-box {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 1%;
+  justify-content: space-between;
+  margin: 5%;
 }
-.hype-box img {
+.dev-box img {
+  width: 25%;
+  margin: auto;
+}
+.dev-box .about-dev {
   width: 50%;
+  margin: auto;
 }
-.hype-box div {
+.dev-box-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin: 5%;
+}
+.dev-box-reverse img {
+  width: 25%;
+  margin: auto;
+}
+.dev-box-reverse .about-dev {
+  width: 50%;
   margin: auto;
 }

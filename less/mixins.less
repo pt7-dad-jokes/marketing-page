@@ -1,9 +1,21 @@
-.flex(){
+.flex(@type, @direction) {
     display: flex;
-}
-
-.direction(@direction) {
-    flex-direction: @direction;
+    & when (@type = row) {
+        & when (@direction = reverse) {
+            flex-direction: row-reverse;
+        }
+        & when (@direction = null) {
+            flex-direction: row;
+        }
+    }
+    & when (@type = column) {
+        & when (@direction = reverse) {
+            flex-direction: column-reverse;
+        }
+        & when (@direction = null) {
+            flex-direction: column;
+        }
+    }
 }
 
 .justify(@justify) {

@@ -1,17 +1,31 @@
 .hype-zone {
-    .flex();
-    .direction(column);
+    .flex(column, null);
 }
 
 .hype-box {
-    .flex();
-    .direction(row);
-    .wrap(nowrap);
-    margin: 1%;
-    img {
-        width: 50%;
+    @media @phone {
+        .flex(column, null);
+        img {
+            max-width: 80%;
+            margin: 1% auto;
+        }
+        div {
+            margin: auto;
+        }
+        
     }
-    div {
-        margin: auto;
+    @media @tablet {
+        .flex(row, null);
+        .wrap(nowrap);
+        margin: 1% 0% 0% 0%;
+        img {
+            width: 50%;
+        }
+        div {
+            margin: auto;
+        }
+    }
+    @media @desktop {
+
     }
 }
