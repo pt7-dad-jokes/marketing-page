@@ -1,21 +1,6 @@
-.flex(@type, @direction) {
+.flex(@direction) {
     display: flex;
-    & when (@type = row) {
-        & when (@direction = reverse) {
-            flex-direction: row-reverse;
-        }
-        & when (@direction = null) {
-            flex-direction: row;
-        }
-    }
-    & when (@type = column) {
-        & when (@direction = reverse) {
-            flex-direction: column-reverse;
-        }
-        & when (@direction = null) {
-            flex-direction: column;
-        }
-    }
+    flex-direction: @direction;
 }
 
 .justify(@justify) {
@@ -26,6 +11,10 @@
     align-items: @align;
 }
 
-.wrap(@wrap) {
-    flex-wrap: @wrap;
+.wrap(){
+    flex-wrap: wrap;
+}
+
+.noWrap(){
+    flex-wrap: nowrap;
 }

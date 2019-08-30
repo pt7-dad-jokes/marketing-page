@@ -1,31 +1,55 @@
+.button {
+    text-align: center;
+}
+
 .hype-zone {
-    .flex(column, null);
+    .flex(row);
+    .wrap();
+    margin-top: 3%;
+    @media @tablet {
+        .justify(space-between);
+    }
+    @media @desktop {
+        .justify(space-between);
+    }
 }
 
 .hype-box {
+    .flex(column);
+    margin: auto;
+    div {
+        margin: auto;
+    }
     @media @phone {
-        .flex(column, null);
+        margin-top: 5%;
         img {
             max-width: 80%;
             margin: 1% auto;
         }
-        div {
-            margin: auto;
-        }
         
     }
     @media @tablet {
-        .flex(row, null);
-        .wrap(nowrap);
-        margin: 1% 0% 0% 0%;
-        img {
-            width: 50%;
+        width: 48%;
+        @media (min-width: 501px) and (max-width: 837px){
+            width: 80%;
+            margin: 5% auto;
+            img {
+                width: 80%;
+            }
         }
-        div {
+        min-width: 350px;
+        margin: 10% 0% 0% 0%;
+        img {
+            width: 60%;
             margin: auto;
         }
     }
     @media @desktop {
-
+        width: 32%;
+        margin: 1% 0% 0% 0%;
+        img {
+            width: 75%;
+            margin: auto;
+        }
     }
 }

@@ -1,33 +1,33 @@
 .dev {
-    .flex(column, null);
-    .justify(space-evenly);
+    .flex(row);
+    .wrap();
     text-align: center;
+    margin: 1%;
 }
 
 .dev-box {
-    .flex(row, null);
-    .justify(space-between);
-    margin: 5%;
+    .flex(column);
+    margin: 1%;
+    margin-top: 10%;
+    width: 100%;
     img {
-        width: 25%;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        border-radius: 50px;
     }
-    .about-dev {
-        width: 50%;
+    @media @phone {
         margin: auto;
+        margin-top: 5%;
     }
-}
 
-.dev-box-reverse {
-    .flex(row, reverse);
-    .justify(space-evenly);
-    margin: 5%;
-    img {
-        width: 25%;
+    @media @tablet {
+        width: 48%;
         margin: auto;
+        margin-top: 5%;
     }
-    .about-dev {
-        width: 50%;
-        margin: auto;
+
+    @media @desktop {
+        width: 30%;
     }
 }

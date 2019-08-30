@@ -1,9 +1,9 @@
 .nav {
     height: 50px;
     background: @dark;
-    .flex(row, null);
+    .flex(row);
     .justify(space-between);
-    .wrap(nowrap);
+    .noWrap();
     .f-align(center);
     img {
         margin-left: 5px;
@@ -14,8 +14,8 @@
     a{
         color: white;
     }
-    .flex(row, null);
+    .flex(row);
     .justify(space-evenly);
-    .wrap(nowrap);
+    .noWrap();
     .f-align(center);
 }
