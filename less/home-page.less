@@ -1,5 +1,4 @@
 body {
-    // background-color: #ff9e47;
     background-color: #e76d00;
 }
 .mid-info {
@@ -9,17 +8,26 @@ body {
     padding: 20px;
     display: flex;
     @media @mobile {
+        // width: 75%;
         display: flex;
         flex-direction: column;
     }
-    // align-content: space-between;
     .info {
         width: 100%;
+        padding: 30px;
         display: flex;
         flex-direction: column;
+        @media @mobile {
+            width: 90%;
+        }
     }
     h3 {
         font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p {
+        line-height: 30px;
+        margin-left: 35px;
     }
     img {
         width: 100%;
@@ -27,39 +35,47 @@ body {
 }
 
 .tll {
-    // width: 100%;
-    border: 2px solid red;
     margin-top: 50px;
+    margin-bottom: 20px;
+    background-color: #ffe6ce;
     display: flex;
     @media @mobile {
-        margin-top: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         display: flex;
         flex-direction: column;
     }
     .Team{
-        // display: flex;
+        margin-top: 20px;
         margin-left: 40px;
-        // padding: 10px;
-        justify-content: space-around;
+        width: 100%;
         @media @mobile {
+            margin-top: 30px;
             margin-left: 75px;
-            // margin-top: 50px;
-            // margin-bottom: 5px;
+            width: 80%;
         }
         p{
+            width: 86%;
+            margin-right: 45px;
+            background-color: white;
+            padding: 10px;
             @media @mobile {
-                // margin-top: 20px;
                 margin-bottom: 30px;
+                margin-right: 60px;
+                padding: 10px;
+                width: 80%;
+               background-color: white;
+            }
+        }
+        img{
+            width: 90%;
+            height: 80%;
+            @media @mobile {
+                width: 85%;
+                height: 76%;
             }
         }
     }
 }
 
-.Team img{
-    width: 90%;
-    height: 80%;
-    @media @mobile {
-        width: 85%;
-        height: 76%;
-    }
-}
+
